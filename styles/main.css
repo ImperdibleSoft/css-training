@@ -3,9 +3,7 @@
 html, body{width: 100%;  height: 100%;}
 body{background: #f7f7f7;}
 br{clear: both;}
-ul, ol{
-  padding: 20px;
-}
+ul, ol{padding: 20px;}
 
 /* Navigation */
 .nav{
