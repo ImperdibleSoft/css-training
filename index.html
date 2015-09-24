@@ -9,15 +9,63 @@
   </head>
   <!--Visible content for users -->
   <body>
-    <!-- Navigation bar -->
-    <div class="nav">
-      <a href="#" class="logo"><img src="images/devspark.png" /></a>
-      <a href="#">Home</a>
-      <a href="#">Options</a>
-      <a href="#">Login</a>
-    </div>
+
+    <!-- Header -->
+    <header>
+
+      <!-- Logo -->
+      <img src="images/devspark.png" />
+
+      <!-- Navigation bar -->
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Options</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <!-- Content -->
     <div class="content">
+
+      <aside>
+        <p>Bienvenidos a la charla sobre HTML + CSS + Responsive Design
+      </aside>
+
+      <section>
+        <form>
+          <label>
+            <span>Email: </span>
+            <input type="email" />
+          </label>
+          <label>
+            <span>Email (no validate): </span>
+            <input type="email" novalidate/>
+          </label>
+          <label>
+            <span>Color: </span>
+            <input type="color" />
+          </label>
+          <label>
+            <span>Autofocus: </span>
+            <input type="text" autofocus />
+          </label>
+          <label>
+            <span>Date: </span>
+            <input type="date" />
+          </label>
+          <label>
+            <span>Range: </span>
+            <input type="range" min="0" max="100" value="25" />
+          </label>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+      <footer>
+        <p>Rafael Pérez García</p>
+      </footer>
     </div>
   </body>
 </html>
