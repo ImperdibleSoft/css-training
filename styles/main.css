@@ -6,19 +6,9 @@ br{clear: both;}
 ul, ol{list-style: none;}
 p{margin-bottom: 10px;}
 
-/* grid */
-.cols-1, .cols-2, .cols-3, .cols-4{
-  position: relative;
-  display: inline-block;
-  float: left;
 
-  min-height: 60px;
-  width: 100%;
-
-  background: #eee;
-}
 /* columns */
-.col-1, .col-2, .col-3, .col-4{
+.small-col, .medium-col, .big-col{
   position: relative;
   display: inline-block;
   float: left;
@@ -30,40 +20,12 @@ p{margin-bottom: 10px;}
   border: 1px solid black;
 }
 
-/* One column */
-.cols-1 .col-1{
-  width: 96%;
+.small-col{
+  width: 200px;
 }
-
-/* two columns */
-.cols-2 .col-1{
-  width: 46%;
+.medium-col{
+  width: 400px;
 }
-.cols-2 .col-2{
-  width: 92%;
-}
-
-/* three columns */
-.cols-3 .col-1{
-  width: 29%;
-}
-.cols-3 .col-2{
-  width: 58%;
-}
-.cols-3 .col-3{
-  width: 87%;
-}
-
-/* four columns */
-.cols-4 .col-1{
-  width: 21%;
-}
-.cols-4 .col-2{
-  width: 42%;
-}
-.cols-4 .col-3{
-  width: 63%;
-}
-.cols-4 .col-4{
-  width: 84%;
+.big-col{
+  width: 600px;
 }
