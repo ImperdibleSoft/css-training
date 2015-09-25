@@ -1,141 +1,144 @@
 <html>
   <!-- Invisible content for users -->
   <head>
+    <meta charset="utf-8" />
+
     <title>Hello world</title>
     <meta name="description" content="Pequeña demostración de HTML">
+
+    <link rel="shortcut icon" href="images/devspark.png" />
+
     <link href="styles/main.css" type="text/css" rel="stylesheet" />
   </head>
   <!--Visible content for users -->
   <body>
-    <!-- Navigation bar -->
-    <div class="nav">
-      <a href="#" class="logo"><img src="images/devspark.png" /></a>
-      <a href="#">Home</a>
-      <a href="#">Options</a>
-      <a href="#">Login</a>
-    </div>
-    <!-- Content -->
-    <div class="content">
-      <!-- Text -->
-      <div class="text">
-        <p>Hi <span>Team</span></p>
-      </div>
-      <!-- More text -->
-      <div class="text">
-        <p>Goodbye</p>
-      </div>
-      <!-- Lists -->
-      <ul>
-        <li>Pedro</li>
-        <li>Pepe</li>
-        <li>Juan</li>
-      </ul>
-      <ol>
-        <li>Pedro</li>
-        <li>Pepe</li>
-        <li>Juan</li>
-      </ol>
+
+    <!-- Header -->
+    <header>
+
+      <!-- Logo -->
+      <img src="images/logo_white.png" />
+
+      <!-- Navigation bar -->
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Options</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <aside>
+      <p>Remember this training was given by Rafael Pérez. You can send your questions to: <a href="mailto:rperezgarcia@devspark.com" target="_blank">rperezgarcia@devspark.com</a>.</p>
+      <img src="images/rafa.jpg" />
+    </aside>
+
+    <!-- Main section -->
+    <section>
+      <p>Welcome to our Responsive Design introduction!</p>
+
+      <!-- Start the survey -->
       <form>
-        <!-- Input text -->
+
+        <!-- Full name -->
         <label>
-          <span>Text</span>
-        	<input type="text" />
+          <span>What's your name?</span>
+          <input type="text" name="name" id="name" placeholder="Enter your name" required />
         </label>
-        <br />
-        <br />
-        <!-- Radio button -->
+
+        <!-- Email -->
         <label>
-        	<input type="radio" checked/>
-          <span>Radio button</span>
+          <span>What's your email?</span>
+          <input type="email" name="email" id="email" placeholder="Enter your email" required />
         </label>
-        <br />
-        <br />
-        <!-- Checkbox -->
+
+        <!-- Question 1 -->
+        <fieldset>
+          <legend>Did you like the talks?</legend>
+
+          <label>
+            <input type="radio" name="likeTutorials" value="no" />
+            <span>Not really, I was waiting more than this.</span>
+          </label>
+          <label>
+            <input type="radio" name="likeTutorials" value="yes" />
+            <span>Yes, it was really useful to me.</span>
+          </label>
+        </fieldset>
+
+        <!-- Question 2 -->
+        <fieldset>
+          <legend>Did you learn anything?</legend>
+
+          <label>
+            <input type="radio" name="learnSomething" value="no" />
+            <span>No, I already knew everething we tal about.</span>
+          </label>
+          <label>
+            <input type="radio" name="learnSomething" value="lost" />
+            <span>No, got miss in some point, I don't know where.</span>
+          </label>
+          <label>
+            <input type="radio" name="learnSomething" value="yes" />
+            <span>Yes, I was able to get some basic skills.</span>
+          </label>
+        </fieldset>
+
+        <!-- Question 3 -->
+        <fieldset>
+          <legend>Mark some adjectives that you think about these talks</legend>
+
+          <label>
+            <input type="checkbox" name="tooMuchContent" />
+            <span>Too much content</span>
+          </label>
+          <label>
+            <input type="checkbox" name="easy" />
+            <span>Easy</span>
+          </label>
+          <label>
+            <input type="checkbox" name="undefined" disabled/>
+            <span>Undefined</span>
+          </label>
+          <label>
+            <input type="checkbox" name="boring" />
+            <span>Boring</span>
+          </label>
+          <label>
+            <input type="checkbox" name="clear" />
+            <span>Clear</span>
+          </label>
+          <label>
+            <input type="checkbox" name="useful" />
+            <span>Useful</span>
+          </label>
+          <label>
+            <input type="checkbox" name="long" />
+            <span>Too much long</span>
+          </label>
+          <label>
+            <input type="checkbox" name="notEnoughContent" />
+            <span>Not enough content</span>
+          </label>
+        </fieldset>
+
         <label>
-        	<input type="checkbox" checked/>
-          <span>Checkbox</span>
+          <span>Give us some retrospective comments:</span>
+          <textarea name="feedback"></textarea>
         </label>
-        <br />
-        <br />
-        <!-- Password -->
-        <label>
-          <span>Password</span>
-        	<input type="password" />
-        </label>
-        <br />
-        <br />
-        <!-- File -->
-        <label>
-          <span>File</span>
-        	<input type="file" />
-        </label>
-        <br />
-        <br />
-        <!-- Dropdown -->
-        <label>
-          <span>Dropdown</span>
-        	<select>
-        		<option value="1" selected>Uno</option>
-        		<option value="2">Dos</option>
-        		<option value="3">Tres</option>
-        	</select>
-        </label>
-        <br />
-        <br />
-        <!-- Textarea -->
-        <label>
-          <span>Textarea</span>
-        	<textarea></textarea>
-        </label>
-        <br />
-        <br />
-        <!-- Button -->
-        <button type="submit" disabled>Enviar</button>
-        <!-- Reset -->
-        <label>
-        	<button type="reset">Limpiar</button>
+
+        <div class="button-wrapper">
+          <button type="reset">Reset survey</button>
+          <button type="button" disabled="disabled">Remove me from this thing</button>
+          <button type="submit">Send results</button>
+        </div>
       </form>
-      <!-- Image gallery -->
-      <div class="gallery">
-        <!-- Gallery big image -->
-        <div class="viewer">
-          <!-- Previous image -->
-          <div class="prev">
-            <img alt="prev"/>
-          </div>
-          <!-- Image -->
-          <div class="image">
-            <img alt="image"/>
-          </div>
-          <!-- Next image -->
-          <div class="next">
-            <img alt="next"/>
-          </div>
-        </div>
-        <!-- Gallery Thumbnails -->
-        <div class="thumbs">
-          <img /><img /><img /><img />
-        </div>
-      </div>
-      <!-- Floats -->
-      <div class="floats bordered">
-        <div class="Baaa box float-none">
-          <div class="Bccc float-left h200 w200"></div>
-        </div>
-        <div class="pad10 float-left">
-          <p>La zona <span class="mini-box Baaa"></span> tiene un float: none.</p>
-          <p>a zona <span class="mini-box Bccc"></span> tiene un float: left;</p>
-        </div>
-      </div>
-      <div class="floats bordered">
-        <div class="Baaa box float-left">
-          <div class="Bccc float-left h200 w200"></div>
-        </div>
-        <div class="pad10 float-left">
-          <p>La zona <span class="mini-box Baaa"></span> tiene un float: left;</p>
-          <p>a zona <span class="mini-box Bccc"></span> tiene un float: left;</p>
-        </div>
-      </div>
-    </div>
+    </section>
+
+    <footer>
+      <p>Special thanks to <b class="tm-color">DevSpark</b> and <b>training committee</b> for providing necesary tools and recording this talks.</p>
+      <img src="images/logo_orange.png" />
+    </footer>
   </body>
 </html>
