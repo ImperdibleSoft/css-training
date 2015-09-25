@@ -6,13 +6,13 @@ br{clear: both;}
 ul, ol{list-style: none;}
 p{margin-bottom: 10px;}
 
-
 /* columns */
 .small-col, .medium-col, .big-col{
   position: relative;
   display: inline-block;
   float: left;
 
+  width: 96%;
   height: 50px;
   margin: 2%;
 
@@ -21,11 +21,11 @@ p{margin-bottom: 10px;}
 }
 
 .small-col{
-  width: 200px;
+  max-width: 200px;
 }
 .medium-col{
-  width: 400px;
+  max-width: 400px;
 }
 .big-col{
-  width: 600px;
+  max-width: 600px;
 }
